@@ -2,7 +2,7 @@
  
   <PropertyGroup>
     <Authors>Phil Hawkins</Authors>
-    <VersionPrefix>0.2.2</VersionPrefix>
+    <VersionPrefix>0.3.1</VersionPrefix>
     <Copyright>MIT</Copyright>
     <Description>An opinionated abstraction layer for easy configuration and inversion-of-control in Xamarin.Forms</Description>
     <PackageProjectUrl>https://phil.harmoniq.dev/Formulator</PackageProjectUrl>
