@@ -10,23 +10,23 @@ namespace Formulator
 {
     public class ResourceJsonProvider : ConfigurationProvider
     {
-        private readonly string _fileName;
+        private readonly string _path;
         private readonly bool _optional;
 
         public ResourceJsonProvider(string fileName, bool optional)
         {
-            _fileName = fileName;
+            _path = string.Join(".", fileName.Split('/'));
             _optional = optional;
         }
 
         public override void Load()
         {
-            var assembly = (typeof(Startup)).GetTypeInfo().Assembly;
-            var stream = assembly.GetManifestResourceStream($"{assembly.GetName().Name}.{_fileName}");
+            var assembly = Container.StartupAssembly;
+            var stream = assembly.GetManifestResourceStream($"{assembly.GetName().Name}.{_path}");
 
             if (stream == null && !_optional)
             {
-                throw new Exception($"Required file not found: {_fileName}");
+                throw new Exception($"Required file not found: {_path}");
             }
             else if (stream != null)
             {
