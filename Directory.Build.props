@@ -2,7 +2,7 @@
  
   <PropertyGroup>
     <Authors>Phil Hawkins</Authors>
-    <VersionPrefix>0.3</VersionPrefix>
+    <VersionPrefix>0.4</VersionPrefix>
     <Copyright>MIT</Copyright>
     <Description>Automagical dependency injection and configuration library for Xamarin.Forms</Description>
     <PackageProjectUrl>https://phil.harmoniq.dev/Formulator</PackageProjectUrl>
