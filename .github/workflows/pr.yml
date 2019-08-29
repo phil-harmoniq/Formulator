@@ -1,10 +1,10 @@
-name: Pull Request
+name: Build
 
 on:
-  pull_request:
+  push:
     branches:
-      - master
-      - develop
+    - master
+    - develop
 
 jobs:
   build:
@@ -20,4 +20,6 @@ jobs:
     - name: Build solution
       run: dotnet build --configuration Release
     - name: Pack NuGet package
-      run: dotnet pack Formulator
+      run: dotnet pack Formulator --configuration Release
+    - name: Push NuGet package
+      run: dotnet nuget push Formulator/bin/release/Formulator.*.nupkg --source https://api.nuget.org/v3/index.json --api-key $NUGET_API_KEY
