@@ -11,6 +11,7 @@
     <PackageIconUrl></PackageIconUrl>
     <PackageTags>Xamarin;Forms;dependency;injection;IoC;configuration</PackageTags>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <PropertyGroup>
