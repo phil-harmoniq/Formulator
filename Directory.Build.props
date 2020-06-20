@@ -11,7 +11,6 @@
     <Description>Automatic dependency injection and configuration library for Xamarin.Forms</Description>
     <PackageProjectUrl>https://phil.harmoniq.dev/PhilHarmoniq.Formulator</PackageProjectUrl>
     <RepositoryUrl>https://github.com/phil-harmoniq/PhilHarmoniq.Formulator</RepositoryUrl>
-    <PackageLicenseUrl>https://github.com/phil-harmoniq/PhilHarmoniq.Formulator/blob/master/LICENSE.md</PackageLicenseUrl>
     <PackageIconUrl></PackageIconUrl>
     <PackageTags>Xamarin;Forms;dependency;injection;IoC;configuration</PackageTags>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
