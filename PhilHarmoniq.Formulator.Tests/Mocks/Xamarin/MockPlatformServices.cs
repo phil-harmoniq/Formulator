@@ -68,6 +68,8 @@ namespace PhilHarmoniq.Formulator.Tests.Mocks.Xamarin
 
         public string RuntimePlatform { get; set; }
 
+        public OSAppTheme RequestedTheme => OSAppTheme.Unspecified;
+
         public void BeginInvokeOnMainThread(Action action)
         {
             if (_invokeOnMainThread == null)
@@ -116,6 +118,16 @@ namespace PhilHarmoniq.Formulator.Tests.Mocks.Xamarin
         }
 
         public SizeRequest GetNativeSize(VisualElement view, double widthConstraint, double heightConstraint)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GetHash(string input)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Color GetNamedColor(string name)
         {
             throw new NotImplementedException();
         }

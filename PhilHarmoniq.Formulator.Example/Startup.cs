@@ -1,8 +1,8 @@
-﻿using PhilHarmoniq.Formulator.Example.Services;
-using PhilHarmoniq.Formulator.Example.ViewModels;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using PhilHarmoniq.Configuration.Extensions.EmbeddedResource;
+using PhilHarmoniq.Embedded.Json;
+using PhilHarmoniq.Formulator.Example.Services;
+using PhilHarmoniq.Formulator.Example.ViewModels;
 
 namespace PhilHarmoniq.Formulator.Example
 {
@@ -11,8 +11,8 @@ namespace PhilHarmoniq.Formulator.Example
         public void Configure(IConfigurationBuilder configBuilder)
         {
             configBuilder
-                .AddEmbeddedJson("appsettings.json")
-                .AddEmbeddedJson("appsettings.Development.json");
+                .AddEmbeddedJson<Startup>("appsettings.json")
+                .AddEmbeddedJson<Startup>("appsettings.Development.json");
         }
 
         public void RegisterDependencies(IServiceCollection services, IConfiguration config)
@@ -24,6 +24,8 @@ namespace PhilHarmoniq.Formulator.Example
                 .AddSingleton<SingletonViewModel>()
                 .AddScoped<ScopedViewModel>()
                 .AddTransient<TransientViewModel>()
+                .AddScoped<MainViewModel>()
+                .AddScoped<AboutViewModel>()
                 .AddScoped<IGuidService, GuidService>();
         }
     }

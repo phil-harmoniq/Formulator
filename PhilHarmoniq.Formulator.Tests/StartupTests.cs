@@ -10,7 +10,8 @@ namespace PhilHarmoniq.Formulator.Tests
         public void ContainerInit()
         {
             MockForms.Init();
-            Assert.NotNull(Container.Init<App, Startup>());
+            var app = Container.Init<App, Startup>();
+            Assert.NotNull(app);
         }
     }
 }
