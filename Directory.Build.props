@@ -9,8 +9,7 @@
     <Authors>Phil Hawkins</Authors>
     <Copyright>MIT</Copyright>
     <Description>Automatic dependency injection and configuration library for Xamarin.Forms</Description>
-    <PackageProjectUrl>https://phil.harmoniq.dev/PhilHarmoniq.Formulator</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/phil-harmoniq/PhilHarmoniq.Formulator</RepositoryUrl>
+    <RepositoryUrl>https://github.com/phil-harmoniq/Formulator</RepositoryUrl>
     <PackageIconUrl></PackageIconUrl>
     <PackageTags>Xamarin;Forms;dependency;injection;IoC;configuration</PackageTags>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
