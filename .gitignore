@@ -218,3 +218,6 @@ _Pvt_Extensions
 
 # Mac directory index
 **/.DS_Store
+
+# Android resource designer
+**/Resource.designer.cs

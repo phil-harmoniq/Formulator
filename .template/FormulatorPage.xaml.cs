@@ -1,4 +1,4 @@
-﻿using Formulator;
+﻿using PhilHarmoniq.Formulator;
 using Xamarin.Forms.Xaml;
 
 namespace $rootnamespace$

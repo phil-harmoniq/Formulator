@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<f:ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+               xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+               xmlns:f="clr-namespace:PhilHarmoniq.Formulator;assembly=PhilHarmoniq.Formulator"
+               xmlns:vm="clr-namespace:PhilHarmoniq.Formulator.Example.ViewModels"
+               x:Class="PhilHarmoniq.Formulator.Example.Views.AboutPage"
+               x:TypeArguments="vm:AboutViewModel"
+               mc:Ignorable="d">
+
+    <d:ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </d:ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+            <Label Text="(with Formulator)"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+    
+</f:ContentPage>
